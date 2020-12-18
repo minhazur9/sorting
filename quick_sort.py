@@ -1,4 +1,4 @@
-def quicksort(array):
+def quick_sort(array):
     size = len(array) # Size of the array
     if size <= 1:  # Return array when there are only one or lower items
         return array 
@@ -14,5 +14,3 @@ def quicksort(array):
         else: # Append to left if not
             left.append(num)
     return quicksort(left) + [pivot] + quicksort(right) # Repeat the process until both arrays only have one number and combine them all 
-
-print(quicksort([5,6,2,7,9,0,2,1,6,7,5,7,9,0,5,3,2,1,6]))
